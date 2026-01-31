@@ -1,0 +1,33 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* 1. HIDE THE GITHUB BUTTONS */
+header ul {
+  display: none !important;
+}
+
+/* 2. FORCE SINGLE COLUMN LAYOUT */
+/* By default, Minimal floats the header left. We will reset that. */
+div.wrapper {
+  max-width: 900px; /* Makes the text area wider */
+  margin: 0 auto;
+}
+
+header {
+  float: none;
+  width: 100%;
+  text-align: left; /* Or center, if you prefer */
+  margin-bottom: 20px;
+  position: relative; 
+}
+
+section {
+  float: none;
+  width: 100%;
+}
+
+/* 3. OPTIONAL: CLEAN UP HEADER TEXT */
+header h1 {
+  margin-bottom: 0.2em;
+}
