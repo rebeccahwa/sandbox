@@ -32,3 +32,8 @@ section {
 header h1 {
   margin-bottom: 0.2em;
 }
+
+/* HIDE THE FOOTER */
+footer {
+  display: none !important;
+}
