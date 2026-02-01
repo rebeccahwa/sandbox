@@ -31,10 +31,28 @@ section {
 /* 3. OPTIONAL: CLEAN UP HEADER TEXT */
 header h1 {
   margin-bottom: 0.2em;
-  display: none !important;
 }
 
 /* HIDE THE FOOTER */
 footer {
   display: none !important;
+}
+
+/* MAKE BUTTONS */
+a.btn {
+  display: inline-block;
+  background-color: #003366; /* Matches your Header Blue */
+  color: white !important;   /* Forces text to be white */
+  padding: 15px 30px;        /* Big click area */
+  border-radius: 5px;        /* Rounded corners */
+  text-decoration: none;     /* No underline */
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+a.btn:hover {
+  background-color: #002244; /* Slightly darker when you mouse over */
+  transform: translateY(-1px); /* Moves up slightly on hover */
 }
