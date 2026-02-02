@@ -15,7 +15,7 @@
 ### Overview
 Artificial Intelligence is rapidly reshaping the cybersecurity landscape—from Large Language Models that automate phishing to adversarial attacks that evade detection. To prepare the next generation of cybersecurity professionals, educators must integrate these concepts into their curricula.
 
-Supported by the National Science Foundation (NSF), this fully-funded summer institute is a collaborative initiative between [The George Washington University](https://cspri.engineering.gwu.edu) and the [University of Hawaii](https://sites.google.com/a/hawaii.edu/uhm-sfs/home?authuser=0). We provide cybersecurity faculty with the dedicated time, technical resources, and expert mentorship needed to modernize their curricula. Join us to shape the future of the field at the intersection of AI and Cybersecurity.
+Supported by the National Science Foundation (NSF), this fully-funded summer institute is a collaborative initiative between [The George Washington University](https://cspri.engineering.gwu.edu) and the [University of Hawaiʻi at Mānoa](https://sites.google.com/a/hawaii.edu/uhm-sfs/home?authuser=0). We provide cybersecurity faculty with the dedicated time, technical resources, and expert mentorship needed to modernize their curricula. Join us to shape the future of the field at the intersection of AI and Cybersecurity.
 
 **Participants will leave this institute with:**
 * **Technical Fluency:** Hands-on experience with PyTorch, LLMs, and Adversarial ML tools.
