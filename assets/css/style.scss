@@ -2,51 +2,58 @@
 ---
 @import "{{ site.theme }}";
 
-/* 1. UNIVERSITY BRANDING HEADER */
-/* This turns the top title area into a Navy Blue block */
-header {
-  background-color: #003366; /* GWU/NSF Navy Blue */
-  color: #ffffff !important;
-  padding: 40px;
-  border-radius: 6px;
-  margin-bottom: 30px;
-  width: 100%;
-  box-sizing: border-box;
-  float: none;
-  text-align: center;
+/* 1. LAYOUT RESET (The Anti-Overlap Fix) */
+/* This forces every section to sit on its own line */
+header, section, footer {
+  float: none !important;
+  width: 100% !important;
+  position: relative !important; /* Stops it from getting stuck/fixed */
+  clear: both !important;        /* Pushes it below the previous item */
+  display: block !important;
 }
 
-header h1, header h2 {
-  color: #ffffff !important;
-  margin: 10px 0;
+/* 2. UNIVERSITY HEADER */
+header {
+  background-color: #003366; /* Navy Blue */
+  color: white !important;
+  padding: 40px 20px;        /* 40px top/bottom, 20px sides */
+  text-align: center;
+  margin-bottom: 50px;       /* FORCE HUGE GAP between Header and Text */
+  border-bottom: 5px solid #ccaa00; /* Optional: Gold stripe at bottom */
+}
+
+header h1 {
+  color: white !important;
+  margin: 0 0 10px 0;
+  font-size: 2.2em;
 }
 
 header p {
-  color: #dddddd !important; /* Light grey for description */
+  color: #dddddd !important;
+  font-size: 1.1em;
 }
 
-/* 2. NUCLEAR OPTION: HIDE GITHUB LINKS */
-/* This forces the "View on GitHub" and footer credits to disappear */
+/* 3. MAIN CONTENT AREA */
+div.wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px; /* Prevents text hitting the screen edge */
+}
+
+section {
+  font-size: 1.1em;
+  line-height: 1.6;
+  padding-top: 10px; /* Extra breathing room */
+}
+
+/* 4. HIDE GITHUB SIDEBAR JUNK */
 header ul, 
 header p.view,
 footer {
   display: none !important;
 }
 
-/* 3. LAYOUT FIXES */
-div.wrapper {
-  max-width: 950px; /* Gives you more width */
-  margin: 0 auto;
-}
-
-section {
-  width: 100%;
-  float: none;
-  font-size: 1.1em; /* Makes text slightly larger/easier to read */
-  line-height: 1.6;
-}
-
-/* 4. MAKE THE BUTTONS POP */
+/* 5. MAKE BUTTONS POP */
 a.btn {
   display: inline-block;
   background-color: #003366;
@@ -62,31 +69,26 @@ a.btn {
 }
 
 a.btn:hover {
-  background-color: #002244; /* Darker blue on hover */
-  transform: translateY(-2px); /* Lifts up slightly */
-  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  background-color: #002244;
+  transform: translateY(-2px);
 }
 
-/* 5. PROFESSIONAL TABLE STYLE */
+/* 6. TABLE STYLING */
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  font-size: 0.95em;
 }
-
 table th {
   background-color: #003366;
   color: white;
   padding: 12px;
   text-align: left;
 }
-
 table td {
   padding: 12px;
   border-bottom: 1px solid #ddd;
 }
-
 table tr:nth-child(even) {
-  background-color: #f2f2f2; /* Zebra striping */
+  background-color: #f2f2f2;
 }
